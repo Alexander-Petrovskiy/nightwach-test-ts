@@ -1,11 +1,11 @@
 module.exports = {
-    'Demo test': function (browser) {
+    'Demo test': async (browser) => {
         console.log("================");
         console.log(browser.launch_url);
         console.log(browser.globals);
         console.log(browser.globals.timeToWait);
         console.log("================");
-        browser
+        await browser
             .url(browser.launch_url)
             .waitForElementVisible('[data-nw=name-input]')
             .setValue('[data-nw=name-input]', 'Pierre')
