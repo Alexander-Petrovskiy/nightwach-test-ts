@@ -1,0 +1,24 @@
+{
+  "name": "nightwach-test-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexander-Petrovskiy/nightwach-test-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexander-Petrovskiy/nightwach-test-ts/issues"
+  },
+  "homepage": "https://github.com/Alexander-Petrovskiy/nightwach-test-ts#readme",
+  "devDependencies": {
+    "chromedriver": "^92.0.1",
+    "nightwatch": "^1.7.8"
+  }
+}
