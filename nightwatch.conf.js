@@ -43,6 +43,7 @@ module.exports = {
         server_path: "node_modules/.bin/chromedriver"
       },
 
+      "launch_url": "https://nightwatch-demo.netlify.com/",
       "globals": {
         "timeToWait": 1001
       }
