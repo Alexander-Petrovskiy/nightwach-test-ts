@@ -1,6 +1,6 @@
 module.exports = {
-    'Demo test': function (browser) {
-        browser
+    'Demo test': async (browser) => {
+        await browser
             .url('https://nightwatch-demo.netlify.com/')
             .waitForElementVisible('[data-nw=name-input]')
             .setValue('[data-nw=name-input]', 'Pierre')
