@@ -1,4 +1,8 @@
 module.exports = {
+    after: function (browser) {
+        console.log('I am done.')
+    },
+
     'Demo test': function (browser) {
         browser
             .url('https://nightwatch-demo.netlify.com/')
