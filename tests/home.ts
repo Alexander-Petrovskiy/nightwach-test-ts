@@ -1,3 +1,5 @@
+// import { NightwatchAPI } from "nightwatch"
+
 module.exports = {
     after: async (browser) => {
         console.log('I am done.')
