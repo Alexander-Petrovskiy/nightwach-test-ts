@@ -37,10 +37,15 @@ module.exports = {
       },
 
       "custom_commands_path": "custom-commands",
-      
+
       webdriver: {
         start_process: true,
         server_path: "node_modules/.bin/chromedriver"
+      },
+
+      "launch_url": "https://nightwatch-demo.netlify.com/",
+      "globals": {
+        "timeToWait": 1001
       }
     },
 
