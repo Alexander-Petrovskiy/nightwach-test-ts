@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Alexander-Petrovskiy/nightwach-test-ts#readme",
   "devDependencies": {
     "chromedriver": "^92.0.1",
-    "nightwatch": "^1.7.8"
+    "nightwatch": "^1.7.8",
+    "typescript": "^4.3.5"
   }
 }
