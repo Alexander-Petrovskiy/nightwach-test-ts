@@ -1,7 +1,7 @@
-// import { NightwatchAPI } from "nightwatch";
+import { NightwatchAPI } from "nightwatch";
 
 module.exports = {
-    'Demo test': async (browser) => {
+    'Demo test': async (browser: any) => {
         console.log("================");
         console.log(browser.launch_url);
         console.log(browser.globals);

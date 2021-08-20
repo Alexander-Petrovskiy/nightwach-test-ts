@@ -1,11 +1,11 @@
-// import { NightwatchAPI } from "nightwatch"
+import { NightwatchAPI } from "nightwatch"
 
 module.exports = {
-    after: async (browser) => {
+    after: async (browser: NightwatchAPI) => {
         console.log('I am done.')
     },
 
-    'Demo test': async (browser) => {
+    'Demo test': async (browser: NightwatchAPI) => {
         await browser
             .url('https://nightwatch-demo.netlify.com/')
             .waitForElementVisible('[data-nw=name-input]')

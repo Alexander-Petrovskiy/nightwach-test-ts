@@ -1,10 +1,9 @@
-// import { NightwatchAPI } from 'nightwatch';
-// import { sleep } from '../src/helpers/sleep_code';
+import { NightwatchAPI } from "nightwatch";
+import { sleep } from '../src/helpers/sleep_code';
 
+const demoTest = async (browser: any) => {
 
-const demoTest = async (browser) => {
-
-    // sleep(2);
+    sleep(2);
 
     await browser
         .url('https://nightwatch-demo.netlify.com/')
