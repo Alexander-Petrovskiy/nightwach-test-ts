@@ -15,7 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-// const EventEmitter = require('events')
+exports.WeirdPause = void 0;
 var events_1 = require("events");
 var WeirdPause = /** @class */ (function (_super) {
     __extends(WeirdPause, _super);
@@ -24,14 +24,15 @@ var WeirdPause = /** @class */ (function (_super) {
     }
     WeirdPause.prototype.command = function (ms, cb) {
         var _this = this;
+        if (cb === void 0) { cb = null; }
         if (!ms || ms % 2 === 0) {
-            throw Error('I am weird, I only accept odd number');
+            throw Error("I am weird, I only accept odd number");
         }
         setTimeout(function () {
-            _this.emit('complete');
+            _this.emit("complete");
         }, ms);
         return this;
     };
     return WeirdPause;
 }(events_1.default));
-module.exports = WeirdPause;
+exports.WeirdPause = WeirdPause;

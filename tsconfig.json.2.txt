@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": ["node", "nightwatch"],
+    "typeRoots": ["node_modules/@types"],
+    "outDir": "build",
+    "target": "es6",
+    "esModuleInterop": true
+  }
+}

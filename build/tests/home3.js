@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 module.exports = {
-    'Demo test': function (browser) { return __awaiter(void 0, void 0, void 0, function () {
+    "Demo test": function (browser) { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -48,15 +48,15 @@ module.exports = {
                     console.log("================");
                     return [4 /*yield*/, browser
                             .url(browser.launch_url)
-                            .waitForElementVisible('[data-nw=name-input]')
-                            .setValue('[data-nw=name-input]', 'Pierre')
+                            .waitForElementVisible("[data-nw=name-input]")
+                            .setValue("[data-nw=name-input]", "Pierre")
                             .weirdPause(browser.globals.timeToWait)
-                            .assert.containsText('[data-nw=welcome-message]', 'Welcome Pierre !')
+                            .assert.containsText("[data-nw=welcome-message]", "Welcome Pierre !")
                             .end()];
                 case 1:
                     _a.sent();
                     return [2 /*return*/];
             }
         });
-    }); }
+    }); },
 };

@@ -43,11 +43,11 @@ var demoTest = function (browser) { return __awaiter(void 0, void 0, void 0, fun
             case 0:
                 sleep_code_1.sleep(2);
                 return [4 /*yield*/, browser
-                        .url('https://nightwatch-demo.netlify.com/')
-                        .waitForElementVisible('[data-nw=name-input]')
-                        .setValue('[data-nw=name-input]', 'Pierre')
+                        .url("https://nightwatch-demo.netlify.com/")
+                        .waitForElementVisible("[data-nw=name-input]")
+                        .setValue("[data-nw=name-input]", "Pierre")
                         .weirdPause(1001) // try putting 1000 and see how the error is trigger
-                        .assert.containsText('[data-nw=welcome-message]', 'Welcome Pierre !')
+                        .assert.containsText("[data-nw=welcome-message]", "Welcome Pierre !")
                         .end()];
             case 1:
                 _a.sent();

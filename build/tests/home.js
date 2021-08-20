@@ -39,24 +39,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 module.exports = {
     after: function (browser) { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
-            console.log('I am done.');
+            console.log("I am done.");
             return [2 /*return*/];
         });
     }); },
-    'Demo test': function (browser) { return __awaiter(void 0, void 0, void 0, function () {
+    "Demo test": function (browser) { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, browser
-                        .url('https://nightwatch-demo.netlify.com/')
-                        .waitForElementVisible('[data-nw=name-input]')
-                        .setValue('[data-nw=name-input]', 'Pierre')
+                        .url("https://nightwatch-demo.netlify.com/")
+                        .waitForElementVisible("[data-nw=name-input]")
+                        .setValue("[data-nw=name-input]", "Pierre")
                         .pause(1000)
-                        .assert.containsText('[data-nw=welcome-message]', 'Welcome Pierre !')
+                        .assert.containsText("[data-nw=welcome-message]", "Welcome Pierre !")
                         .end()];
                 case 1:
                     _a.sent();
                     return [2 /*return*/];
             }
         });
-    }); }
+    }); },
 };
