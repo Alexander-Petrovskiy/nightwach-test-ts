@@ -8,10 +8,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import EventEmitter from "events";
 // import EventEmitter from "events";
 // import EventEmitter from "stream";
 // import Events from "events";
-export default class WeirdPause {
+// export default 
+class WeirdPause extends EventEmitter {
     command(ms) {
         return __awaiter(this, void 0, void 0, function* () {
             if (!ms || ms % 2 === 0) {
@@ -33,4 +35,4 @@ export default class WeirdPause {
         });
     }
 }
-// module.exports = { WeirdPause };
+module.exports = { WeirdPause };

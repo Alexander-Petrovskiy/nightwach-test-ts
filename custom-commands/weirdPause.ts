@@ -1,11 +1,14 @@
 // import EventEmitter from "events";
 
+import EventEmitter from "events";
+
 // import EventEmitter from "events";
 
 // import EventEmitter from "stream";
 // import Events from "events";
 
-export default class WeirdPause {// extends EventEmitter{
+// export default 
+class WeirdPause extends EventEmitter{
   async command(ms: number) {
     if (!ms || ms % 2 === 0) {
       throw Error("I am weird, I only accept odd number");
@@ -31,4 +34,4 @@ export default class WeirdPause {// extends EventEmitter{
     );
   }
 }
-// module.exports = { WeirdPause };
+module.exports = { WeirdPause };

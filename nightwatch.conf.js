@@ -2,6 +2,13 @@
 // Refer to the online docs for more details: https://nightwatchjs.org/gettingstarted/configuration/
 // const Services = {}; loadServices();
 
+// require('babel-register')() // or 
+// require('babel-core/register')
+// require("@babel/register");
+import {register} from "babel"
+// experimentally
+// require("@babel/preset-typescript");
+
 // TODO: add the eslint exception
 const src_folders = ["build"];
 const webdriver = {
