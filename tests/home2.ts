@@ -2,7 +2,7 @@
 // import { sleep } from '../src/helpers/sleep_code';
 
 
-async function demoTest(browser) {
+const demoTest = async (browser) => {
 
     // sleep(2);
 

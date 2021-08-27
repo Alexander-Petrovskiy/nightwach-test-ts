@@ -1,7 +1,8 @@
-const EventEmitter = require('events')
+// const EventEmitter = require('events')
+import EventEmitter from 'events';
 
 class WeirdPause extends EventEmitter {
-    command(ms, cb) {
+    command(ms: number, cb: any) {
         if (!ms || ms % 2 === 0) {
             throw Error('I am weird, I only accept odd number')
         }
