@@ -3,8 +3,8 @@
     "tslint:latest",
     "tslint-plugin-prettier",
     "tslint-config-prettier",
-    "tslint-circular-dependencies",
-    "tslint-no-circular-imports"
+    "tslint-no-circular-imports",
+    "tslint-circular-dependencies"
   ],
   "rules": {
     "prettier": true
