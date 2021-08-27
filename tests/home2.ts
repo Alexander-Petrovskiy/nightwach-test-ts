@@ -1,5 +1,5 @@
 import { NightwatchAPI } from "nightwatch";
-import { sleep } from "../src/helpers/sleep_code";
+import sleep from "../src/helpers/sleep_code";
 
 const demoTest = async (browser: any) => {
   sleep(2);

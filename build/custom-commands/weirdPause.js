@@ -1,38 +1,36 @@
-"use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.WeirdPause = void 0;
-var events_1 = require("events");
-var WeirdPause = /** @class */ (function (_super) {
-    __extends(WeirdPause, _super);
-    function WeirdPause() {
-        return _super !== null && _super.apply(this, arguments) || this;
+// import EventEmitter from "events";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+// import EventEmitter from "events";
+// import EventEmitter from "stream";
+// import Events from "events";
+export default class WeirdPause {
+    command(ms) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (!ms || ms % 2 === 0) {
+                throw Error("I am weird, I only accept odd number");
+            }
+            // setTimeout(() => {
+            //   this.emit("complete");
+            // }, ms);
+            // return this;
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    // if we have a callback, call it right before the complete event
+                    // if (cb) {
+                    //   cb.call(this.api);
+                    // }
+                    resolve(null);
+                }, ms);
+            });
+        });
     }
-    WeirdPause.prototype.command = function (ms, cb) {
-        var _this = this;
-        if (cb === void 0) { cb = null; }
-        if (!ms || ms % 2 === 0) {
-            throw Error("I am weird, I only accept odd number");
-        }
-        setTimeout(function () {
-            _this.emit("complete");
-        }, ms);
-        return this;
-    };
-    return WeirdPause;
-}(events_1.default));
-exports.WeirdPause = WeirdPause;
+}
+// module.exports = { WeirdPause };

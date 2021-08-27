@@ -1,64 +1,67 @@
 {
-    "author": "Girma Nigusse <xgirma@gmail.com>",
+    "author": "",
     "bugs": {
-      "url": "https://github.com/e2e-boilerplate/nightwatch-typescript-tsc-expect/issues"
+        "url": "https://github.com/Alexander-Petrovskiy/nightwach-test-ts/issues"
     },
     "dependencies": {
-      "chromedriver": "^91.0.1",
-      "nightwatch": "^1.7.8",
-      "rimraf": "^3.0.2",
-      "typescript": "^4.3.5"
+        "chromedriver": "^91.0.1",
+        "events": "^3.3.0",
+        "nightwatch": "^1.7.8",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.3.5"
     },
     "description": "Nightwatch end-to-end test automation boilerplate. Using TypeScript, tsc and Expect.",
     "devDependencies": {
-      "@types/nightwatch": "^1.3.4",
-      "@types/node": "^16.6.2",
-      "husky": "^7.0.1",
-      "lint-staged": "^11.1.2",
-      "prettier": "^2.3.2",
-      "tslint": "^6.1.3",
-      "tslint-config-prettier": "^1.18.0",
-      "tslint-plugin-prettier": "^2.3.0"
+        "@types/nightwatch": "^1.3.4",
+        "@types/node": "^16.6.2",
+        "husky": "^7.0.1",
+        "lint-staged": "^11.1.2",
+        "prettier": "^2.3.2",
+        "tslint": "^6.1.3",
+        "tslint-circular-dependencies": "^0.1.0",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-no-circular-imports": "^0.7.0",
+        "tslint-plugin-prettier": "^2.3.0"
     },
-    "homepage": "https://github.com/e2e-boilerplate/nightwatch-typescript-tsc-expect#readme",
+    "homepage": "https://github.com/Alexander-Petrovskiy/nightwach-test-ts#readme",
     "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged --allow-empty"
-      }
+        "hooks": {
+            "pre-commit": "lint-staged --allow-empty"
+        }
     },
     "keywords": [
-      "expect",
-      "nightwatch",
-      "nightwatch automation",
-      "nightwatch boilerplate",
-      "nightwatch example",
-      "tsc",
-      "typescript",
-      "e2e",
-      "e2e tests",
-      "boilerplate",
-      "integration test",
-      "test automation",
-      "javascript"
+        "expect",
+        "nightwatch",
+        "nightwatch automation",
+        "nightwatch boilerplate",
+        "nightwatch example",
+        "tsc",
+        "typescript",
+        "e2e",
+        "e2e tests",
+        "boilerplate",
+        "integration test",
+        "test automation",
+        "javascript"
     ],
     "license": "MIT",
     "lint-staged": {
-      "*.{js,ts,json,md}": [
-        "tslint --fix",
-        "prettier --write"
-      ]
+        "*.{js,ts,json,md}": [
+            "tslint --fix",
+            "prettier --write"
+        ]
     },
-    "name": "nightwatch-typescript-tsc-expect",
+    "name": "nightwach-test-ts",
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/e2e-boilerplate/nightwatch-typescript-tsc-expect.git"
+        "type": "git",
+        "url": "git+https://github.com/Alexander-Petrovskiy/nightwach-test-ts.git"
     },
     "scripts": {
-      "build": "npx tsc",
-      "clean": "npx rimraf ./build/*",
-      "lint": "tslint -c tslint.json './spec/*.ts' './src/*.ts' './tests/*.ts' './custom-commands/*.ts'",
-      "pretty": "prettier --no-config './spec/*.ts' './src/*.ts' './tests/*.ts' './custom-commands/*.ts' --write",
-      "test": "npx nightwatch"
+        "build": "npx tsc",
+        "clean": "npx rimraf ./build/*",
+        "lint": "tslint -c tslint.json './spec/*.ts' './src/*.ts' './tests/*.ts' './custom-commands/*.ts'",
+        "pretty": "prettier --no-config './spec/*.ts' './src/*.ts' './tests/*.ts' './custom-commands/*.ts' --write",
+        "test": "npx nightwatch"
     },
     "version": "1.0.0"
-  }
+}
